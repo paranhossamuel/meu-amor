@@ -41,4 +41,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     atualizarSlides();
     iniciarAutoPlay();
+
+    
+    const musica = document.getElementById('musica');
+    const btnPlay = document.getElementById('btn-play');
+    const carta = document.getElementById('carta-surpresa');
+
+    if (btnPlay && musica && carta) {
+        btnPlay.addEventListener('click', () => {
+            if (musica.paused) {
+                musica.play();
+                btnPlay.innerHTML = '⏸ Pausar';
+                carta.classList.remove('escondida');
+                carta.classList.add('revelada');
+            } else {
+                musica.pause();
+                btnPlay.innerHTML = '▶ㅤDar play no início da nossa história';
+            }
+        });
+    }
 });
