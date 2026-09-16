@@ -203,3 +203,33 @@ button.proximo {
     padding: 40px; 
     transition: all 1.5s ease-in-out;
 }
+
+/*Ajustes apenas para celular*/
+
+@media (max-width: 768px) {
+    
+   
+    .botao-tocar {
+        width: 90% !important; 
+        height: auto !important;  
+        white-space: normal !important;  
+        padding: 15px 20px !important;
+        border-radius: 20px !important;
+        line-height: 1.4 !important;
+        text-align: center !important;
+    }
+
+     
+    .carta-container {
+        width: 95% !important;  
+    }
+
+    .revelada {
+        max-height: 20000px !important;  
+        padding: 25px 15px !important;
+    }
+
+    .texto-carta {
+        font-size: 1.8rem !important; 
+    }
+}
